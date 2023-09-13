@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "connorwmarshall.github.io",
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "connorwmarshall.github.io"
+	}
+}
