@@ -57,8 +57,9 @@ body {
   }
 
   .myCard {
+    font-family: 'Courier New', serif;
     width: 35em;
-    height: 20em;
+    height: 22em;
     margin: 5em auto;
     background-color: burlywood;
     border: 0.2em solid black;
