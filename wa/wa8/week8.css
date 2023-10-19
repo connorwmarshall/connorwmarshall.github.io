@@ -22,15 +22,14 @@ nav a{
 }
 
 .mandela{
-    width: 50%;
-    height: 50%;
+    width: 20%;
     position: relative;
     transition-duration: 2s;
 }
 
 .mandela:hover{
     content: url(/img/mandela2.png);
-    width:100%;
+    width:50%;
 }
 
 #red-ball{
