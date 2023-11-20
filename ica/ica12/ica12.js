@@ -1,14 +1,11 @@
 const newBtn = document.querySelector('#js-new-quote'). addEventListener('click', getQuote);
 
-const answerBtn = document.querySelector('#js-tweet'). addEventListener('click', testFunction);
+const answerBtn = document.querySelector('#js-tweet').addEventListener('click', displayAnswer);
+let answerTxt = document.querySelector('#js-answer-text');
 
-let answer = ""
+let answer = ''
 
 const endpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
-
-function testFunction() {
-    console.log("You clicked the answer button. Good job.");
-}
 
 async function getQuote() {
    
@@ -19,7 +16,8 @@ async function getQuote() {
         }
         const json = await response.json();
         displayQuote(json['question']);
-        
+        answer = json['answer'];
+        answerTxt.textContent = '';
     }
     catch(err) {
         console.log(err);
@@ -43,9 +41,8 @@ async function getAnswer() {
     }
 }
 
-function displayAnswer(answer) {
-    const answerTxt = document.querySelector('#js-answer-text');
-    answerTxt.textContent = answer; 
+function displayAnswer() {
+    answerTxt.textContent = answer;
 }
 
 getQuote();
