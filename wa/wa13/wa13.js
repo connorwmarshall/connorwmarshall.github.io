@@ -76,8 +76,6 @@ console.log(totalSalary);
 
 //PROBLEM 5
 
-console.log("PROBLEM 5");
-
 let temp =0;
 for (let i=0; i < companyDetails.employees.employees.length; i++) {
     if(companyDetails.employees.employees[i].raiseEligable === "true"){
@@ -86,4 +84,21 @@ for (let i=0; i < companyDetails.employees.employees.length; i++) {
         companyDetails.employees.employees[i].raiseEligable = "false";
     }
 }
+
+console.log("PROBLEM 5");
 console.log(companyDetails.employees);
+
+//PROBLEM 6
+
+const arr = ['Anna','Sam'];
+for(let i=0; i < employeeDetails.employees.length; i++){
+    if(arr.includes(employeeDetails.employees[i].name)){
+        employeeDetails.employees[i].wfh = "true";
+    }
+    else{
+        employeeDetails.employees[i].wfh = "false"
+    }
+}
+
+console.log("PROBLEM 6");
+console.log(employeeDetails.employees);
