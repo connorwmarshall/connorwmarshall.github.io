@@ -40,12 +40,12 @@ resetButton.addEventListener('click', () => {
 
 submitButton.addEventListener('click', () => {
     if(!stopped){
-        stopped = true;
-        elapsedTime = Date.now() - startTime;
-        clearInterval(intervalId);
+        stopped = true};
+    elapsedTime = Date.now() - startTime;
+    clearInterval(intervalId);
 
-        phoneNumber.textContent = `${seconds}`;
-    }
+    phoneNumber.textContent = `${seconds}`;
+    
 });
 
 function updateTimer(){
