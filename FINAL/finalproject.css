@@ -2,58 +2,63 @@
     padding: 1%;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
+    color:#2C3359; 
 }
 
 .timerButton {
     font-size: 20px;
     width: 100px;
     height: 40px;
-    border: 1px solid;
+    border: 1px solid #2C3359;
     background-color: white;
-    color: black;
+    color: #2C3359;
     cursor: pointer;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .timerButton:hover {
     font-weight: bold;
-    border: 2px solid;
+    border: 2px solid #2C3359;
 }
 
 #timerDisplay {
     padding: 1%;
     font-size: 30px;
+    margin-top: 1%;
     margin-bottom: 1%;
     margin-left: 40%;
     margin-right: 40%;
-    border: 1px solid;
-    color: black;
+    border: 1px solid #2C3359;
+    color: #2D3E40;
     background-color: white;
     font-family: 'Courier New', Courier, monospace;
 }
 
 #timerContainer{
     text-align: center;
-    background-color: white;
+    background-color: #F2EDE4;
+    border: 1px solid #2C3359;
 }
 
 #phoneNumber {
     font-size: 30px;
-    color: black;
+    color: #2D3E40;
     font-family: 'Courier New', Courier, monospace;
     width: 10em;
     text-align: center ;
-    border: 1px solid;
+    border: 1px solid #2C3359;
     background-color: white;
     font-weight: bold;
+    margin-bottom: 1%;
 }
 
 .gridContainer {    
-    margin-top: 0%;
+    margin-top: 3%;
     margin-bottom: 1%;
     display: grid;
     justify-items: center;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    padding: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+    margin-left: 32%;
+    margin-right: 32%;
 }

@@ -32,6 +32,8 @@ stopButton.addEventListener('click', () => {
 resetButton.addEventListener('click', () => {
     if(!stopped){
         stopped = true};
+    seconds = 0;
+    currentTime = 0;
     elapsedTime = 0;
     clearInterval(intervalId); 
     timerDisplay.textContent = `0`;
@@ -42,6 +44,8 @@ submitButton.addEventListener('click', () => {
     if(!stopped){
         stopped = true};
     elapsedTime = Date.now() - startTime;
+    currentTime = 0;
+    elapsedTime = 0;
     clearInterval(intervalId);
 
     phoneNumber.textContent = `${seconds}`;
