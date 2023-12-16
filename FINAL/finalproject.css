@@ -1,0 +1,51 @@
+.text {
+    padding: 1%;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.timerButton {
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+    border: 3px solid;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#timerDisplay {
+    padding: 3%;
+    font-size: 75px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#timerContainer{
+    text-align: center;
+    border: 3px solid;
+    border-radius: 25px;
+    background-color: darkgray;
+}
+
+#phoneNumber {
+    font-size: 75px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    width: 10em;
+    text-align: center ;
+    border: 3px solid;
+    background-color: white;
+}
+
+.gridContainer {    
+    margin-top: 0%;
+    margin-bottom: 1%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: auto;
+}
