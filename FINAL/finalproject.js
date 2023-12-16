@@ -29,7 +29,16 @@ stopButton.addEventListener('click', () => {
     }
 });
 
-resetButton.addEventListener('click', () => {});
+resetButton.addEventListener('click', () => {
+    if(!stopped){
+        stopped = true;
+        elapsedTime = 0;
+        clearInterval(intervalId); 
+        timerDisplay.textContent = `0`;
+    }
+});
+
+
 
 submitButton.addEventListener('click', () => {
     if(!stopped){
